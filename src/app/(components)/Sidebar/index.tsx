@@ -78,7 +78,6 @@ export default function Sidebar() {
         className={`flex gap-3 justify-between md:justify-normal items-center pt-8 ${
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}>
-        <div>logo</div>
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"
@@ -114,12 +113,6 @@ export default function Sidebar() {
           href="/users"
           icon={User}
           label="Users"
-          isCollapsed={isSidebarCollapsed}
-        />
-        <SidebarLink
-          href="/settings"
-          icon={SlidersHorizontal}
-          label="Settings"
           isCollapsed={isSidebarCollapsed}
         />
         <SidebarLink
